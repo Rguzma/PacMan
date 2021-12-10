@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac Man</title>
+</head>
+<body id="body" class="white">
+
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; margin: 20px; border: 2px solid black; border-radius: 5px; padding: 25px; width: 80%;">
+        <div class="messages">
+
+        </div>
+        
+        <form class="chatForm">
+            <input id="message" placeholder="enter your message here" />
+            
+            <input type="radio" name="room" id="room1"/>
+            <label>Room 1</label>
+
+            <input type="radio" name="room" id="room2"/>
+            <label>Room 2</label>
+
+            <input type="radio" name="room" id="room3"/>
+            <label>Room 3</label>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
